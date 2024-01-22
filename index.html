@@ -7,10 +7,82 @@
     <!--tailwind and daisy ui cdn link  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
-
+<!-- Google Font Link  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+<!-- Icon link  -->
+<script src="https://kit.fontawesome.com/2344fa13fc.js" crossorigin="anonymous"></script>
+<!-- Custom css color -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'text-color':'#131318',
+            'btn-primary-bg': 'FF4240',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .font-manrope{
+        font-family: 'Manrope', sans-serif;
+    }
+  </style>
 
 </head>
-<body>
-    
+<body class="font-manrope">
+    <header class="max-w-[1240px] mx-auto">
+        <!-- nav ber start -->
+        <nav class=" mt-5 lg:mt-10">
+            <div class="navbar  bg-base-100">
+              <div class="navbar-start   ">
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                  </div>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About </a></li>
+                    <li><a href="">Pages </a></li>
+                    <li><a href="">Blog </a></li>
+                    <li><a href="">Contact</a></li>
+                  </ul>
+                </div>
+              <div>
+                <h1 class="text-3xl lg:text-4xl text-text-color font-extrabold">Hockey<span class="text-[#FF4240] text-4xl font-extrabold">’</span>s</h1>
+              </div>
+              </div>
+              <div class="navbar-center hidden lg:flex mt-3 ">
+                <ul class="menu menu-horizontal px-1 text-xl gap-6">
+                  <li><a class="text-[#FF4240] font-bold" href="">Home</a></li>
+                  <li><a class="text-[#424247] href="">About </a></li>
+                  <li><a class="text-[#424247] href="">Pages </a></li>
+                  <li><a class="text-[#424247] href="">Blog </a></li>
+                  <li><a class="text-[#424247] href="">Contact</a></li>
+                </ul>
+                <div></div>
+              </div>
+              <div class="navbar-end">
+                <a href=""><img src="./Images/search.png" alt="" class=" hidden sm:block mr-4 mt-2"></a>
+                <button class="text-white text-sm px-2 py-3 lg:text-xl font-bold bg-[#FF4240] lg:px-3 lg:py-3 rounded-md ">Get Ticket</button>
+              </div>
+            </div>
+          </nav>
+        <!-- nav ber end -->
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
